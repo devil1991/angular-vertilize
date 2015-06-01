@@ -46,7 +46,7 @@
             // Add window resize to digest cycle
             angular.element($window).bind('resize', function(){
               return $scope.$apply();
-            });            
+            });
           }
         ]
       };
@@ -76,7 +76,7 @@
                 visibility: 'hidden'
               });
             element.after(clone);
-            var realHeight = clone.height();
+            var realHeight = clone.innerHeight();
             clone['remove']();
             return realHeight;
           };
